@@ -1,6 +1,7 @@
 package com.example.week3
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -20,6 +21,8 @@ class LoginActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnCancel = findViewById<Button>(R.id.btnCancel)
 
+        Log.d("Checking", "onCreate")
+
         // Xử lý nút Login
         btnLogin.setOnClickListener {
             val username = etUsername.text.toString()
@@ -32,7 +35,9 @@ class LoginActivity : AppCompatActivity() {
                 tvError.text = "Invalid username or password"
                 tvError.visibility = TextView.VISIBLE
             }
+
         }
+
 
         // Xử lý nút Cancel
         btnCancel.setOnClickListener {
@@ -41,4 +46,37 @@ class LoginActivity : AppCompatActivity() {
             tvError.visibility = TextView.GONE
         }
     }
-}
+    override fun onStart(){
+        super.onStart();
+        Log.d("Checking", "Running onStart")
+    }
+    override fun onPause(){
+        super.onPause();
+        Log.d("Checking", "Running onPause")
+    }
+
+    override fun onRestart() {
+        super.onRestart();
+        Log.d("Checking", "Running onRestart")
+    }
+
+    override fun onResume() {
+        super.onResume();
+        Log.d("Checking", "Running onResume")
+    }
+
+    override fun onStop() {
+        super.onStop();
+        Log.d("Checking", "Running onStop")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy();
+        Log.d("Checking", "Running onDestroy")
+    }
+        }
+
+
+
+
+
