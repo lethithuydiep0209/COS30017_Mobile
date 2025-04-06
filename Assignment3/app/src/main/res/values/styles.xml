@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base theme cho ứng dụng của bạn -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize default attributes nếu cần -->
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <!--        <item name="android:colorPrimaryVariant">@color/primary</item>-->
+        <item name="android:colorAccent">@color/primary</item>
+    </style>
+
+    <!-- Style cho EditText (sử dụng cho activity_add_todo.xml) -->
+    <style name="CustomEditTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@drawable/edittext_background</item>
+        <!-- Bạn có thể thêm các thuộc tính khác như textColor, hintColor, ... -->
+    </style>
+
+    <!-- Style cho TextView tiêu đề trong item_todo.xml -->
+    <style name="TodoTitleStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/todo_title_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style cho CheckBox trong item_todo.xml -->
+    <style name="CustomCheckBoxStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Style cho các TextView trong TodoDetailFragment -->
+    <style name="DetailTitleStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="DetailDescriptionStyle">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="DetailStatusStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+</resources>

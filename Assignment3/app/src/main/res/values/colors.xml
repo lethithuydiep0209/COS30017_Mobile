@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Màu chủ đạo, ví dụ primary: -->
+    <color name="primary">#6200EE</color>
+    <!-- Màu nền cho EditText, ví dụ: -->
+    <color name="edittext_background_color">#FFFFFF</color>
+    <!-- Màu viền cho EditText -->
+    <color name="edittext_border_color">#CCCCCC</color>
+    <!-- Màu cho TextView tiêu đề trong danh sách Todo -->
+    <color name="todo_title_color">#000000</color>
+</resources>
